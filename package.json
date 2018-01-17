@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": false,
   "main": "app.js",
+  "scripts": {
+    "start:dev": "node app"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "latest",
