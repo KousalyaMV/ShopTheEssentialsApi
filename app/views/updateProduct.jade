@@ -1,0 +1,26 @@
+extend header
+title Update Product
+body
+block content
+    .row
+      .col-md-4.col-md-offset-4
+        h1 Update Product
+        form(action='/Shopping/updateProduct?_method=PUT', method='POST')
+          .form-group
+            label Item Name        
+            input.form-control(type='text', name='itemTitle', value= Product.itemTitle placeholder='Item Name',readonly)         
+          .form-group
+            label Item Description           
+            input.form-control(type='text', name='itemDescription', value= Product.itemDescription, placeholder='Item Description',required)        
+          .form-group
+            label Item Price          
+            input.form-control(type='number', name='itemPrice', value= Product.itemPrice, placeholder='Item Price',required)       
+          .form-group
+            label Item Type          
+            input.form-control(type='text', name='itemType', value= Product.itemType, placeholder='Item Type',required)         
+          .clearfix
+            button.btn.btn-primary(type='submit')
+              i.fa.fa-pencil-square-o(aria-hidden='true')  Update Product
+            =' '         
+            a.btn.btn-danger(href='/Shopping')
+              i.fa.fa-arrow-circle-o-left(aria-hidden='true')  Back

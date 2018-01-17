@@ -1,0 +1,33 @@
+.thumbnail img{
+	max-height: 150px;
+}
+
+.thumbnail .description{
+	color: #7f7f7f;
+}
+
+.price{
+	font-weight: bold;
+}
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+	.thumbnail {width: 21%;}
+}
+ 
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+	.thumbnail {width: 29.33333%;}
+}
+ 
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+	.thumbnail {width: 46%;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	.thumbnail {width: 96%;}
+	.thumbnail img {width: 96%;}
+	.thumbnail h3 {font-size: 18px;}
+	.thumbnail p, {font-size: 18px;}
+}

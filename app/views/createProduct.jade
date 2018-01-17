@@ -1,0 +1,50 @@
+extend header
+title Create Product
+body
+block content
+    .row
+      .col-md-4.col-md-offset-4
+        h1 Create Product
+        |       
+        |       
+        form(action='/Shopping/createProduct', method='post')
+          .form-group
+            label Item Name
+            |                  
+            |                     
+            |           
+            input.form-control(type='text', name='itemTitle', placeholder='Item Name', required='required')
+          |                       
+          |                 
+          |         
+          .form-group
+            label Item Description 
+            |                      
+            |                     
+            |           
+            input.form-control(type='text', name='itemDescription', placeholder='Item Description', required='required')
+          |                   
+          |                 
+          |         
+          .form-group
+            label Item Price
+            |                   
+            |                     
+            |           
+            input.form-control(type='number', name='itemPrice', placeholder='Item Price', required='required')
+          |                      
+          |                 
+          |         
+          .form-group
+            label Item Type
+            |                            
+            |                     
+            |           
+            input.form-control(type='text', name='itemType', placeholder='Item Type', required='required')
+          |         
+          .clearfix
+            button.btn.btn-primary(type='submit')
+              i.fa.fa-plus(aria-hidden='true')  Create
+            |           
+            a.btn.btn-danger(href='/Shopping')
+              i.fa.fa-arrow-circle-o-left(aria-hidden='true')  Back
